@@ -1,0 +1,31 @@
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 16px solid rgb(238, 238, 13);
+  border-top: 16px solid rgb(0, 255, 136);
+  border-left: 16px solid rgb(255, 0, 170);
+  border-right: 16px solid rgb(14, 151, 214);
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
